@@ -1,0 +1,20 @@
+{% include system_config.Theme+"/public/head.html" %}
+<div id="page">
+    {% include system_config.Theme+"/public/menu.html" %}
+
+    <div id="content">
+        <article class="post">
+
+            <h1><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a></h1>
+
+            <div class="post-content">{{ content|safe }}</div>
+
+            <p class="meta">Posted on <span class="postdate">{{ page_info.time }}</span></p>
+
+            {% include "include/comment_box.html" ignore missing %}
+        </article>
+
+    </div>
+
+</div>
+{% include system_config.Theme+"/public/foot.html" %}

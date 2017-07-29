@@ -1,0 +1,19 @@
+<div id="sidebar">
+
+    <nav>
+        <ul>
+            {% for item in menu_list %}
+                <li><a href="{% if "absolute" in item and item.absolute %}{{ item.url }}{% else %}/{{ item.url }}{% if static %}.html{% endif %}{% endif %}">{{ item.name }}</a></li>
+            {% endfor %}
+            <li><a href="/rss" rel="alternate" type="application/rss+xml" target="_blank">RSS
+                Feed</a></li>
+        </ul>
+    </nav>
+
+    <div class="bio">
+        <img class="avatar" src="{{ system_config.Author_Image }}" />
+        <h3>{{ system_config.Author_Name }}</h3>
+        <p>{{ system_config.Author_Introduction }}</p>
+    </div>
+
+</div>

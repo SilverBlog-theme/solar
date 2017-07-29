@@ -1,0 +1,31 @@
+{% include system_config.Theme+"/public/head.html" %}
+<div id="page">
+    {% include system_config.Theme+"/public/menu.html" %}
+
+    <div id="content">
+        {% for page_info in page_list %}
+        <article class="post">
+
+            <h1><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a></h1>
+
+            <div class="post-content"><p>{{ page_info.excerpt }}</p></div>
+
+            <p class="meta">Posted on <span class="postdate">{{ page_info.time }}</span></p>
+        </article>
+        {% endfor %}
+
+
+        <nav class="pagination" role="navigation">
+            {% if now_page !=1 %}
+                <a class="newer-posts" href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}"><span aria-hidden="true">&larr;</span> Newer Posts</a>
+            {% endif %}
+            <span class="page-number">Page {{ now_page }} of {{ page_row }}</span>
+            {% if now_page != page_row and page_row != 1 %}
+                <a class="older-posts" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">Older Posts <span aria-hidden="true">&rarr;</span></a>
+            {% endif %}
+        </nav>
+
+    </div>
+
+</div>
+{% include system_config.Theme+"/public/foot.html" %}

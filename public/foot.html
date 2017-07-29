@@ -1,0 +1,18 @@
+<footer id="footer">
+    <p class="copyright">Copyright © 2017 {{ system_config.Project_Name }}. Powered by <a href="https://github.com/SilverBlogTeam">SilverBlog</a>, theme by <a
+            href="http://www.webmaster-source.com/">Matt Harzewski</a></p>
+    {% include "include/foot.html" ignore missing %}
+</footer>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/prism/9000.0.1/prism.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+    });
+</script>
+
+
+</body>
+</html>

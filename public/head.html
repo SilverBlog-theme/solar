@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <meta charset="UTF-8">
+    <title>{{ system_config.Project_Name }}</title>
+    <meta name="viewport" content="width=device-width">
+
+    <link href="/static/solar/css/style.css" rel="stylesheet">
+    <link href="/static/solar/css/colors-dark.css" rel="stylesheet">
+    {% include "include/head.html" ignore missing %}
+</head>
+
+<body class="home-template">
+
+<header id="header">
+    <h1><a href="/"><i class="icon-sun"></i> {{ system_config.Project_Name }}</a></h1>
+    <p>{{ system_config.Project_Description }}</p>
+</header>
