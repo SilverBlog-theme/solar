@@ -1,7 +1,7 @@
 Solar Theme for Ghost
 =====================
 
-A stylish theme for [Ghost](http://ghost.org/) blogs, based on the [Solarized](http://ethanschoonover.com/solarized) color palette.
+A stylish theme for [SilverBlog](https://github.com/SilverBlogTeam/) blogs, based on the [Solarized](http://ethanschoonover.com/solarized) color palette.
 
 ![Screenshot](http://i.imgur.com/P94J69S.png)
 
@@ -38,13 +38,6 @@ Solar uses [Prism.js](http://prismjs.com) for syntax highlighting, which works i
 Valid language classes include `language-markup`, `language-css`, `language-javascript`, `language-ruby`, and `language-php`. Prism.js supports a large range of additional languages (most of which have been included in Solar), as well as generic support for C-like languages.
 
 ![Syntax Highlighting Screenshot](http://i.imgur.com/yKQqTz1.png)
-
-
-To-Do
------
-
-* The Jekyll version of Solar has linkblog support, while the Ghost one does not. This is because there isn't a finalized plugin API for Ghost yet, and there is no built-in linkblogging or post meta feature as of yet. This may change as Ghost's feature set is filled out more.
-
 
 License
 -------
