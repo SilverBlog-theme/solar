@@ -39,13 +39,6 @@ Valid language classes include `language-markup`, `language-css`, `language-java
 
 ![Syntax Highlighting Screenshot](http://i.imgur.com/yKQqTz1.png)
 
-
-To-Do
------
-
-* The Jekyll version of Solar has linkblog support, while the Ghost one does not. This is because there isn't a finalized plugin API for Ghost yet, and there is no built-in linkblogging or post meta feature as of yet. This may change as Ghost's feature set is filled out more.
-
-
 License
 -------
 
