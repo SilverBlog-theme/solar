@@ -15,13 +15,13 @@
         {% endfor %}
 
 
-        <nav class="pagination" role="navigation">
+        <nav class="pagination">
             {% if now_page !=1 %}
-                <a class="newer-posts" href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}"><span aria-hidden="true">&larr;</span> Newer Posts</a>
+                <a class="newer-posts" href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}"><span>&larr;</span> Newer Posts</a>
             {% endif %}
             <span class="page-number">Page {{ now_page }} of {{ page_row }}</span>
             {% if now_page != page_row and page_row != 1 %}
-                <a class="older-posts" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">Older Posts <span aria-hidden="true">&rarr;</span></a>
+                <a class="older-posts" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">Older Posts <span>&rarr;</span></a>
             {% endif %}
         </nav>
 
