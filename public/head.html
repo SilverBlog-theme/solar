@@ -8,7 +8,11 @@
     <meta name="viewport" content="width=device-width">
 
     <link href="/static/solar/css/style.css" rel="stylesheet">
-    <link href="/static/solar/css/colors-dark.css" rel="stylesheet">
+    {% set color = "light" %}
+    {% if template_config.Dark %}
+        {% set color = "dark" %}
+    {% endif %}
+    <link href="/static/solar/css/colors-{{ color }}.css" rel="stylesheet">
     {% include "include/head.html" ignore missing %}
 </head>
 
