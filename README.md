@@ -1,7 +1,7 @@
 Solar Theme for Ghost
 =====================
 
-A stylish theme for [Ghost](http://ghost.org/) blogs, based on the [Solarized](http://ethanschoonover.com/solarized) color palette.
+A stylish theme for [SilverBlog](https://github.com/SilverBlogTeam/) blogs, based on the [Solarized](http://ethanschoonover.com/solarized) color palette.
 
 ![Screenshot](http://i.imgur.com/P94J69S.png)
 
