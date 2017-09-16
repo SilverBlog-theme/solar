@@ -2,6 +2,7 @@
 
     <nav>
         <ul>
+            <li><a href="/index{% if static %}.html{% endif %}">Home</a></li>
             {% for item in menu_list %}
                 {% if "absolute" in item %}
                     {% set url = item.absolute %}
