@@ -17,7 +17,7 @@ Installation
 ------------
 
 ```bash
-curl https://raw.githubusercontent.com/SilverBlogTeam/solar/master/install.sh | bash
+curl https://raw.githubusercontent.com/SilverBlogTheme/solar/master/install.sh | bash
 ```
 
 Customization
