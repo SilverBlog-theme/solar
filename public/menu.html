@@ -2,14 +2,14 @@
 
     <nav>
         <ul>
-            <li><a href="/index{% if static %}.html{% endif %}">Home</a></li>
+            <li><a href="/">Home</a></li>
             {% for item in menu_list %}
                 {% if "absolute" in item %}
                     {% set url = item.absolute %}
                 {% else %}
                     {% set url = "/"+item.name %}
                 {% endif %}
-                <li><a href="{{url}}{% if static %}.html{% endif %}">{{ item.title }}</a></li>
+                <li><a href="{{url}}">{{ item.title }}</a></li>
             {% endfor %}
             <li><a href="/rss" rel="alternate" type="application/rss+xml" target="_blank">RSS
                 Feed</a></li>
