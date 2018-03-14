@@ -6,7 +6,7 @@
         {% for page_info in page_list %}
         <article class="post">
 
-            <h1><a href="/{{ page_info.name }}{% if static %}.html{% endif %}">{{ page_info.title }}</a></h1>
+            <h1><a href="/{{ page_info.name }}">{{ page_info.title }}</a></h1>
 
             <div class="post-content"><p>{{ page_info.excerpt }}</p></div>
 
@@ -17,11 +17,11 @@
 
         <nav class="pagination">
             {% if now_page !=1 %}
-                <a class="newer-posts" href="/index/p/{{ now_page - 1 }}{% if static %}.html{% endif %}"><span>&larr;</span> Newer Posts</a>
+                <a class="newer-posts" href="/index/{{ now_page - 1 }}"><span>&larr;</span> Newer Posts</a>
             {% endif %}
             <span class="page-number">Page {{ now_page }} of {{ page_row }}</span>
             {% if now_page != page_row and page_row != 1 %}
-                <a class="older-posts" href="/index/p/{{ now_page + 1 }}{% if static %}.html{% endif %}">Older Posts <span>&rarr;</span></a>
+                <a class="older-posts" href="/index/{{ now_page + 1 }}">Older Posts <span>&rarr;</span></a>
             {% endif %}
         </nav>
 
