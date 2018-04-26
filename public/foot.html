@@ -1,5 +1,5 @@
 <footer id="footer">
-    <p class="copyright">Copyright © 2017 {{ system_config.Project_Name }}. Powered by <a href="https://github.com/SilverBlogTeam">SilverBlog</a>, theme by <a
+    <p class="copyright">Copyright © {{ now_time|format_datetime("%Y") }} {{ system_config.Project_Name }}. Powered by <a href="https://github.com/SilverBlogTeam">SilverBlog</a>, theme by <a
             href="http://www.webmaster-source.com/">Matt Harzewski</a></p>
     {% include "include/foot.html" ignore missing %}
 </footer>
